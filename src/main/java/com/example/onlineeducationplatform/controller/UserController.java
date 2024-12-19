@@ -13,15 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class UserController {
 
-    @Resource
-    private UserService userService;
-
-    // 处理登录请求（GET请求显示登录页面）
-    @GetMapping("/")
-    public String showLoginPage() {
-        return "index";  // 返回登录页面的视图
-    }
-
     @GetMapping("/home")
     public String showPage() {
         return "home";
