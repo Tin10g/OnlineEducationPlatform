@@ -13,8 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class UserController {
 
-    @Resource
-    private UserService userService;
 
     // 处理登录请求（GET请求显示登录页面）
     @GetMapping("/")
